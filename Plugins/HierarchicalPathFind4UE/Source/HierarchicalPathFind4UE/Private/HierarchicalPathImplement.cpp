@@ -72,7 +72,6 @@ bool HierarchicalPathImplement::GetHerarchicalPath(UWorld* CurrentWorld, const F
 
 	TArray<dtPolyRef> PointsOut;
 	getClusterPath(Navmesh, tStartPoly, tEndPoly, PointsOut);
-	PathPoints.Add(StartPoint);
 	for (int i = 0;i < PointsOut.Num();i++)
 	{
 		dtClusterRef clusterRef = PointsOut[i];
