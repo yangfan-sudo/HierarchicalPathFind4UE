@@ -13,6 +13,8 @@ UCLASS()
 class HIERARCHICALPATHFIND_API AHPFPlayerController : public APlayerController
 {
 	GENERATED_BODY()
+public:
+	AHPFPlayerController();
 protected:
 	virtual void SetupInputComponent() override;
 
@@ -22,5 +24,8 @@ protected:
 	/** Navigate player to the given world location. */
 	void SetNewMoveDestination(const FVector DestLocation);
 
+	/** Input handlers for SetDestination action. */
+	void OnSetDestinationPressed();
+	void OnSetDestinationReleased();
 	
 };

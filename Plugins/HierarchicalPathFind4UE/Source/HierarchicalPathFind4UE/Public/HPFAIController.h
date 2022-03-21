@@ -15,7 +15,7 @@ class HIERARCHICALPATHFIND4UE_API AHPFAIController : public AAIController
 	GENERATED_BODY()
 public:
 	UPROPERTY(EditAnywhere)
-	float HPFDistance = 100000;
+	float HPFDistance = 10000;
 
 	TArray<FVector> ToGoalPathPoints;
 
